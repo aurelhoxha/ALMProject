@@ -9,7 +9,7 @@ public class ExcelDataProvider {
 
     XSSFWorkbook mWorkbook;
     public ExcelDataProvider() {
-        File scr = new File("TestData/Data.xlsx");
+        File scr = new File("./TestData/Data.xlsx");
         FileInputStream mFileInputStream = null;
         try {
             mFileInputStream = new FileInputStream(scr);
