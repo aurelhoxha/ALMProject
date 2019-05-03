@@ -15,7 +15,7 @@ public class LoginTestAmazon extends BaseClass {
         LoginPage mLoginPage = PageFactory.initElements(driver,LoginPage.class);
         logger.info("Starting Application");
         AmazonHomePage mAmazonHomePage = PageFactory.initElements(driver,AmazonHomePage.class);
-        mLoginPage.loginToAmazon(excel.getStringData("Login", 1, 0), excel.getStringData("Login", 1, 1));
+        mLoginPage.loginToAmazon(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
         mAmazonHomePage.openAccountInfo();
         logger.pass("Login Successful");
     }
